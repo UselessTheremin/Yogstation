@@ -32740,6 +32740,10 @@
 "cFl" = (
 /turf/closed/wall,
 /area/maintenance/solars/port/aft)
+"cFn" = (
+/obj/structure/window/reinforced/spawner/east,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "cFx" = (
 /obj/machinery/requests_console{
 	department = "Security";
@@ -34894,6 +34898,12 @@
 	},
 /turf/open/floor/wood,
 /area/library)
+"dPO" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/west,
+/obj/item/clothing/head/crown,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "dQG" = (
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -37672,6 +37682,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
+"fQc" = (
+/obj/structure/window/reinforced/spawner/north,
+/obj/machinery/computer/slot_machine,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "fQz" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cloth_curtain{
@@ -37782,6 +37797,10 @@
 /obj/item/t_scanner,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"fWZ" = (
+/obj/structure/marker_beacon,
+/turf/open/floor/plating,
+/area/crew_quarters/abandoned_gambling_den)
 "fXn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -46681,6 +46700,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"mfi" = (
+/obj/structure/bed/dogbed/birdboat,
+/mob/living/simple_animal/hostile/retaliate/goose/vomit{
+	name = "King Birdboat"
+	},
+/obj/effect/decal/cleanable/vomit,
+/obj/effect/spawner/lootdrop/trashbin,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "mgH" = (
 /obj/effect/turf_decal/arrows/white{
 	color = "#99ccff"
@@ -47232,6 +47260,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"mzs" = (
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/crew_quarters/abandoned_gambling_den)
 "mzH" = (
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
@@ -47403,6 +47435,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/aft)
+"mDm" = (
+/obj/structure/window/reinforced/spawner/west,
+/obj/effect/spawner/lootdrop/trashbin,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "mDn" = (
 /obj/machinery/telecomms/broadcaster/preset_left{
 	name = "subspace broadcaster A"
@@ -50837,6 +50874,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"oGG" = (
+/obj/structure/window/reinforced/spawner/east,
+/obj/structure/window/reinforced/spawner/north,
+/obj/effect/spawner/lootdrop/trashbin,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "oGJ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -51397,6 +51440,12 @@
 	},
 /turf/open/space/basic,
 /area/engine/atmos_distro)
+"paJ" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/east,
+/obj/effect/spawner/lootdrop/trashbin,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "pbv" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -52399,6 +52448,12 @@
 /obj/machinery/vending/snack/random,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+"pNT" = (
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner/north,
+/obj/effect/decal/cleanable/vomit,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "pOw" = (
 /turf/closed/wall/r_wall,
 /area/hallway/primary/port)
@@ -52497,6 +52552,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+"pRe" = (
+/obj/structure/window/reinforced/spawner,
+/obj/effect/spawner/lootdrop/trashbin,
+/turf/open/floor/carpet/red,
+/area/crew_quarters/abandoned_gambling_den)
 "pRt" = (
 /obj/machinery/cell_charger,
 /obj/structure/table,
@@ -84732,7 +84792,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+qdN
 aaa
 aaa
 aaa
@@ -84989,7 +85049,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+qdN
 aaa
 aaa
 aaa
@@ -85246,7 +85306,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+mzs
 aaa
 aaa
 aaa
@@ -85502,9 +85562,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+mzs
+fWZ
+mzs
 aaa
 aaa
 aaa
@@ -85758,11 +85818,11 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+mzs
+pNT
+mDm
+dPO
+mzs
 aaa
 aaa
 aaa
@@ -86012,17 +86072,17 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+qdN
+qdN
+mzs
+fWZ
+fQc
+mfi
+pRe
+fWZ
+mzs
+qdN
+qdN
 aaa
 aaa
 aaa
@@ -86272,11 +86332,11 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+mzs
+oGG
+cFn
+paJ
+mzs
 aaa
 aaa
 aaa
@@ -86530,9 +86590,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+mzs
+fWZ
+mzs
 aaa
 aaa
 aaa
@@ -86788,7 +86848,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+mzs
 aaa
 aaa
 aaa
@@ -87045,7 +87105,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+qdN
 aaa
 aaa
 aaa
@@ -87302,7 +87362,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+qdN
 aaa
 aaa
 aaa
