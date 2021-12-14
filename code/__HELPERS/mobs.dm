@@ -465,15 +465,20 @@ GLOBAL_LIST_EMPTY(species_list)
 
 // Displays a message in deadchat, sent by source. Source is not linkified, message is, to avoid stuff like character names to be linkified.
 // Automatically gives the class deadsay to the whole message (message + source)
-/proc/deadchat_broadcast(message, source=null, mob/follow_target=null, turf/turf_target=null, speaker_key=null, message_type=DEADCHAT_REGULAR)
+/proc/deadchat_broadcast(message, source=null, mob/follow_target=null, turf/turf_target=null, speaker_key=null, message_type=DEADCHAT_REGULAR, admin_only=FALSE)
 	message = span_deadsay("[source][span_linkify("[message]")]")
+	
 	for(var/mob/M in GLOB.player_list)
 		var/datum/preferences/prefs
 		if(M.client && M.client.prefs)
 			prefs = M.client.prefs
 		else
 			prefs = new
-
+		if(admin_only)
+			if (!M.client.holder)
+				return
+			else
+				message += "<span class='deadsay'> (This is viewable to admins only).</span>"
 		var/override = FALSE
 		if(M.client && M.client.holder && (prefs.chat_toggles & CHAT_DEAD))
 			override = TRUE
@@ -495,7 +500,10 @@ GLOBAL_LIST_EMPTY(species_list)
 			if(DEADCHAT_ARRIVALRATTLE)
 				if(prefs.toggles & DISABLE_ARRIVALRATTLE)
 					continue
-
+			if(DEADCHAT_LOGIN_LOGOUT)
+				if(!(chat_toggles & CHAT_LOGIN_LOGOUT))
+					continue
+					
 		if(isobserver(M))
 			var/rendered_message = message
 
