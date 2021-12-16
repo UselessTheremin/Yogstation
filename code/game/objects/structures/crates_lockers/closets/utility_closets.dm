@@ -1,6 +1,7 @@
 /* Utility Closets
  * Contains:
  *		Emergency Closet
+ *		Emergency Vox Closet
  *		Fire Closet
  *		Tool Closet
  *		Radiation Closet
@@ -52,6 +53,22 @@
 		// teehee
 		if ("delete")
 			qdel(src)
+			
+/*
+ * Emergency Vox Closet
+ */
+/obj/structure/closet/emvoxcloset
+	name = "vox emergency closet"
+	desc = "It's full of life-saving equipment.  Assuming, that is, that you breathe nitrogen."
+	icon_state = "emergencyvox"
+
+/obj/structure/closet/emvoxcloset/New()
+	..()
+
+	new /obj/item/weapon/tank/internals/emergency_nitrogen(src)
+	new /obj/item/weapon/tank/internals/emergency_nitrogen(src)
+	new /obj/item/clothing/mask/breath/vox(src)
+	new /obj/item/clothing/mask/breath/vox(src)
 
 /*
  * Fire Closet
