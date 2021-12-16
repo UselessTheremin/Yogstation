@@ -45,6 +45,7 @@
 #define ROLE_DARKSPAWN			"darkspawn" // Yogs
 #define ROLE_HOLOPARASITE		"Holoparasite" // Yogs
 #define ROLE_INFILTRATOR		"Infiltrator" // Yogs
+#define ROLE_VOX				"vox Raider" // Yogs
 #define ROLE_ZOMBIE				"Zombie"
 
 
@@ -83,7 +84,8 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_DARKSPAWN = /datum/game_mode/darkspawn,
 	ROLE_SENTIENCE,
 	ROLE_ZOMBIE = /datum/game_mode/zombie,
-	ROLE_FUGITIVE
+	ROLE_FUGITIVE,
+	ROLE_VOX =  /datum/game_mode/voxheist
 ))
 
 //Job defines for what happens when you fail to qualify for any job during job selection
