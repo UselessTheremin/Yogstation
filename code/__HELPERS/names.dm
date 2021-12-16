@@ -7,6 +7,16 @@
 /proc/polysmorph_name()
 	return pick(GLOB.polysmorph_names)
 
+
+/proc/vox_name()
+	var/sounds = rand(3,8)
+	var/newname = ""
+
+	for(var/i in 1 to sounds)
+		newname += pick(vox_name_syllables)
+
+	return capitalize(newname) 
+
 /proc/ethereal_name()
 	var/tempname = "[pick(GLOB.ethereal_names)] [random_capital_letter()]"
 	if(prob(65))
